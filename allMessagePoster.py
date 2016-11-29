@@ -15,7 +15,11 @@ allMessage = """Hey, this is on r/all.
 # You will definitely have to change this.  See the above link for instructions
 
 auth = {}
+auth['client_id'] = ''
+auth['client_secret'] = ''
 auth['user_agent'] = 'r/all watcher example by Eegras'
+auth['username'] = ''
+auth['password'] = ''
 
 reddit = praw.Reddit(client_id=auth['client_id'],
                      client_secret=auth['client_secret'],
