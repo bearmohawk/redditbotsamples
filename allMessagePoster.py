@@ -51,14 +51,14 @@ for post in redditFrontPage:
         print "We have a post on r/all! '{}'".format(post.title)
         if str(post.id) not in frontOld:
             print "We haven't seen it before!"
-            #message = post.reply(allMessage)
-            #message.distinguish(sticky=True)
+            message = post.reply(allMessage)
+            message.distinguish(sticky=True)
 
             frontOld.append(str(post.id))
         else:
             print "We have seen it before."
-f.seek(0)
-f.truncate()
-f.seek(0)
-f.write(json.dumps(frontOld))
-f.close()
+    f.seek(0)
+    f.truncate()
+    f.seek(0)
+    f.write(json.dumps(frontOld))
+    f.close()
