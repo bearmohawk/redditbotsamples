@@ -1,0 +1,16 @@
+{
+  "name": "redditbotsamples",
+  "description": "js w/ heroku",
+  "scripts": {
+  },
+  "env": {
+  },
+  "formation": {
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+
+  ]
+}
